@@ -31,6 +31,29 @@ class Login extends StatelessWidget {
               
               filled: true,
               contentPadding: const EdgeInsets.all(7),
+            )),
+
+const SizedBox(
+            height: 33,),
+
+
+                TextField(
+            keyboardType: TextInputType.text,
+            obscureText: true,
+            decoration: InputDecoration(
+              hintText: "Enter Your Passord : ",
+              // To delete borders
+              enabledBorder: OutlineInputBorder(
+                borderSide: Divider.createBorderSide(context),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(
+                  color: Color.fromARGB(255, 0, 0, 0),
+                ),
+              ),
+              
+              filled: true,
+              contentPadding: const EdgeInsets.all(7),
             ))
       ]),
     ));
