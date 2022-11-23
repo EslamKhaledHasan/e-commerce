@@ -15,22 +15,22 @@ class Login extends StatelessWidget {
           ),
         ),
         TextField(
-            keyboardType: TextInputType.text,
-            obscureText: true,
+            keyboardType: TextInputType.emailAddress,
+            obscureText: false,
             decoration: InputDecoration(
-              hintText: "Enter Your Password : ",
+              hintText: "Enter Your E-mail : ",
               // To delete borders
               enabledBorder: OutlineInputBorder(
                 borderSide: Divider.createBorderSide(context),
               ),
               focusedBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-                  color: Colors.grey,
+                  color: Color.fromARGB(255, 0, 0, 0),
                 ),
               ),
-              // fillColor: Colors.red,
+              
               filled: true,
-              contentPadding: const EdgeInsets.all(8),
+              contentPadding: const EdgeInsets.all(7),
             ))
       ]),
     ));
